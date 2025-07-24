@@ -20,4 +20,15 @@ changeOrderBtn.addEventListener("click", () => {
   order.classList.add("highlight");
 });
 
+let additem = document.querySelector("#additem");
+additem.addEventListener("click", () => {
+  const newelement = document.createElement("li");
+  newelement.textContent = "Fruits";
+  let list = document.querySelector("#shopping-list");
+  list.appendChild(newelement);
+});
 
+let btn = document.querySelector("#remove");
+btn.addEventListener("click", () => {
+  document.querySelector("#task-list").lastElementChild.remove();
+});
