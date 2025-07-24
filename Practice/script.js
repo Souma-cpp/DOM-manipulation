@@ -12,3 +12,12 @@ highlightCityBtn.addEventListener("click", () => {
   let firstcity = cities.firstElementChild;
   firstcity.setAttribute("class", "highlight");
 });
+
+let changeOrderBtn = document.querySelector("#changeOrderBtn");
+changeOrderBtn.addEventListener("click", () => {
+  let order = document.querySelector(".order");
+  order.innerText = "Espresso";
+  order.classList.add("highlight");
+});
+
+
