@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Dom manipulation practice part 2</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                text-align: center;
+                background-color: #f0f8ff;
+                margin: 0;
+                padding: 0;
+            }
+            h1 {
+                color: #333;
+                margin-top: 50px;
+                font-size: 2rem;
+                text-transform: uppercase;
+                letter-spacing: 2px;
+            }
+            .btn {
+                background-color: #4caf50;
+                color: white;
+                border: none;
+                padding: 10px 20px;
+                font-size: 16px;
+                cursor: pointer;
+                border-radius: 5px;
+                margin-top: 20px;
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+                transition: background-color 0.3s ease, transform 0.2s ease;
+            }
+            .btn:hover {
+                background-color: #45a049;
+                transform: scale(1.05);
+            }
+            .tea_list {
+                list-style-type: none;
+                padding: 0;
+                margin: 20px auto;
+                max-width: 300px;
+                text-align: left;
+            }
+            .list {
+                background-color: #fff;
+                margin: 5px 0;
+                padding: 10px;
+                border-radius: 5px;
+                box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+                font-size: 1rem;
+                color: #333;
+                transition: background-color 0.3s ease;
+            }
+            .list:hover {
+                background-color: #f0f8ff;
+            }
+            .1, .2 {
+                margin: 20px auto;
+                padding: 20px;
+                border-radius: 10px;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                background-color: #fff;
+                max-width: 600px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="1">
+            <h1>PRESS HERE TO HAVE SOME FUN</h1>
+            <button class="btn">click me</button>
+        </div>
+
+        <div class="2">
+            <ul class="tea_list">
+                <li class="list">Masala tea</li>
+                <li class="list">Black tea</li>
+                <li class="list">Normal tea</li>
+                <li class="list">Darjeeling tea</li>
+            </ul>
+        </div>
+        <script src="./script.js"></script>
+    </body>
+</html>
