@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM Practice Playground</title>
+    <style>
+      body {
+        font-family: consolas;
+        background-color: #1c1c1c;
+        text-align: center;
+        color: white;
+        padding: 2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+      h1 {
+        text-align: center;
+        margin-bottom: 2rem;
+        color: #2c3e50;
+      }
+
+      .section {
+        width: 400px;
+        background-color: #2c2c2c;
+        padding: 1.5rem;
+        margin-bottom: 1.5rem;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.06);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .section h2 {
+        margin-bottom: 1rem;
+        font-size: 1.3rem;
+        color: #34495e;
+      }
+
+      button {
+        background-color: #3498db;
+        color: white;
+        border: none;
+        padding: 0.6rem 1.2rem;
+        border-radius: 6px;
+        font-size: 1rem;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        margin-top: 0.5rem;
+      }
+
+      button:hover {
+        background-color: #2980b9;
+      }
+
+      ul {
+        width: 100%;
+        padding-left: 1.2rem;
+        margin-bottom: 1rem;
+      }
+
+      li {
+        width: 100%;
+        margin: 0.3rem 0;
+        list-style-type: none;
+      }
+
+      .list-title {
+        font-weight: bold;
+        margin-bottom: 0.5rem;
+        font-size: larger;
+      }
+
+      .highlight {
+        background: linear-gradient(#e66465, #9198e5);
+        color: black;
+        border: 2px solid white;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>DOM Manipulation Practice</h1>
+
+    <div class="section">
+      <h2>Change Button Text</h2>
+      <p id="text-change">Original Button Text</p>
+      <button id="changeTextBtn">Change Text</button>
+    </div>
+
+    <div class="section">
+      <h2>Highlight First City</h2>
+      <ul id="city-list">
+        <li>Delhi</li>
+        <li>London</li>
+        <li>Berlin</li>
+      </ul>
+      <button id="highlightCityBtn">Highlight First City</button>
+    </div>
+
+    <div class="section">
+      <h2>Change Order to Espresso</h2>
+      <div class="list-title">Orders</div>
+      <ul id="order-list">
+        <li>Cappuccino</li>
+        <li>Latte</li>
+        <li>Americano</li>
+      </ul>
+      <button id="changeOrderBtn">Change to Espresso</button>
+    </div>
+
+    <div class="section">
+      <h2>Add New Shopping Item</h2>
+      <div class="list-title">Shopping List</div>
+      <ul id="shopping-list">
+        <li>Tea</li>
+        <li>Sugar</li>
+        <li>Rice</li>
+      </ul>
+      <button id="addItemBtn">Add Item</button>
+    </div>
+
+    <div class="section">
+      <h2>Remove Last Task</h2>
+      <div class="list-title">Task List</div>
+      <ul id="task-list">
+        <li>Complete project</li>
+        <li>Go to gym</li>
+        <li>Read book</li>
+      </ul>
+      <button id="removeTaskBtn">Remove Last Task</button>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
